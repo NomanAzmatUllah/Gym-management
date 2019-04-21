@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF50308C-9A54-47F6-A62D-3FFC8AD19136}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gymmanagementsystem</RootNamespace>
+    <AssemblyName>gymmanagementsystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminpage\adminpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminpage\adminpage.Designer.cs">
+      <DependentUpon>adminpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="femaledetailsfom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="femaledetailsfom.Designer.cs">
+      <DependentUpon>femaledetailsfom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginform\logincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginform\logincs.Designer.cs">
+      <DependentUpon>logincs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="malefemalescreen\female.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="malefemalescreen\female.Designer.cs">
+      <DependentUpon>female.cs</DependentUpon>
+    </Compile>
+    <Compile Include="malefemalescreen\femalegrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="malefemalescreen\femalegrid.Designer.cs">
+      <DependentUpon>femalegrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="malefemalescreen\malegrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="malefemalescreen\malegrid.Designer.cs">
+      <DependentUpon>malegrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="malefemalescreen\male.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="malefemalescreen\male.Designer.cs">
+      <DependentUpon>male.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="transctions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transctions.Designer.cs">
+      <DependentUpon>transctions.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminpage\adminpage.resx">
+      <DependentUpon>adminpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="femaledetailsfom.resx">
+      <DependentUpon>femaledetailsfom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginform\logincs.resx">
+      <DependentUpon>logincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="malefemalescreen\female.resx">
+      <DependentUpon>female.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="malefemalescreen\femalegrid.resx">
+      <DependentUpon>femalegrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="malefemalescreen\malegrid.resx">
+      <DependentUpon>malegrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="malefemalescreen\male.resx">
+      <DependentUpon>male.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="transctions.resx">
+      <DependentUpon>transctions.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BDx-Fitness-3-1080x675.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nNFNwv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1540497077202-7c8a3999166f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Change POst png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1280-barbell-deadlift_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-494436262-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1517836357463-d25dfeac3438.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AL HANNAN LOGO copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Office Change POst png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3200e44e9d8941cd287f87f3aeaaec1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FITNESS BAR RECEIPT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-best-rowing-machine-workout-for-fat-loss_ck92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NCMony.tif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1280-barbell-deadlift_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free-Weights.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-685534.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMPANY LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bloomsbury_Gym_Highres.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kKZdnD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3173012_orig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barbell-PCOS-800x380_c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wood-Wallpaper-Background-21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-494436262-612x6121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fitness-man-desktop-wallpaper-51316-53014-hd-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plank-fitness-muscular-exercising-163437.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adult-athlete-body-414029.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-1430819.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\active-aerobics-beautiful-917653.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zNFjjk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ksKxtr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\608244.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
